@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/TeamKazukai/Lucy.git /Lucy 
+  git clone https://github.com/TeamKazukai/LucyX.git /LucyX
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /THALAPATHY-FILTER-BOT 
+  git clone $UPSTREAM_REPO /LucyX
 fi
-cd /Lucy
+cd /LucyX
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
